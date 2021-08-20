@@ -1319,6 +1319,7 @@ class ComposeFamily(object):
 
     def refresh(self):
         self.sort_container_configs()
+        self.set_compute_platform()
         self.handle_iam()
         self.handle_logging()
         self.apply_services_params()
